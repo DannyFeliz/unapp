@@ -1,29 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <header class="flex justify-center mt-10">
+      <p class="text-3xl">
+        <strong class="text-4xl">Unapp</strong> – a directory of minimal and useful single-purpose apps.
+      </p>
+    </header>
     <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+html {
+  background-color: #e6ecf0;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+</style>
+
+<style lang="scss" scoped>
+#app {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+
+  strong {
+    font-style: initial;
+  }
+
+  p {
+    font-style: italic;
   }
 }
 </style>

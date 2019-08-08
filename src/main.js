@@ -5,6 +5,10 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+import "tailwindcss/dist/base.css";
+import "tailwindcss/dist/components.css";
+import "tailwindcss/dist/utilities.css";
+
 new Vue({
   router,
   store,
