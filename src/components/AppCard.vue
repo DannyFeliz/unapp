@@ -40,6 +40,10 @@ export default {
   border-radius: 0.8rem;
   padding: 1rem;
 
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
   .left-side {
     width: 5rem;
     height: 5rem;
