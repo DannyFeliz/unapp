@@ -1,5 +1,7 @@
 <template>
-  <span @click="$emit('search-by', tagContent)">{{ tagContent }}</span>
+  <span @click="$emit('search-by', tagContent)">
+    {{ tagContent }}
+  </span>
 </template>
 
 <script>
